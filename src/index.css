@@ -1,0 +1,19 @@
+:root{
+  --b1 : #dad7cd;
+  --b2 : #5e6472;
+  --b3 : #3a506b;
+  --b4 : #1c2541;
+  --b5 : #0b132b;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  background-color: var(--b4);
+  height: 100%;
+}
+#root{
+  height: 100%;
+}

@@ -1,0 +1,49 @@
+#container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:185%;
+  color: var(--b1);
+  border-radius: 7px;
+  margin: 3vh auto 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: var(--b5);
+  height: 80px;
+  width: 40%;
+  min-width: 350px;
+}
+#header-special{
+  color: var(--b3);
+  font-weight: bold;
+}
+#logo{
+  display: block;
+  height: 70px;
+  padding-left: 5px;
+}
+#name{
+  margin: auto;
+  padding-right: 8vh;
+}
+#main{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#weather{
+  border-radius: 7px;
+  background-color: var(--b5);
+  width: 40vw;
+  height: 80vh;
+  min-width: 350px;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
