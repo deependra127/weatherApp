@@ -2,6 +2,18 @@ import React from 'react';
 import './wstyle.css';
 import { useState } from 'react';
 import DataFetcher from './DataFetcher';
+import thunderstorm from './assets/thunderstorn.png';
+import shower_rain from './assets/shower-rain.png';
+import rain from './assets/rain.png';
+import snow from './assets/snow.png';
+import mist from './assets/mist.png';
+import sun from './assets/sun.png';
+import few_clouds from './assets/few-clouds.png';
+import s_clouds from './assets/scattercloud.png';
+import b_clouds from './assets/broken-cloud.png';
+
+
+
 
 const Weather = () => {
   const [cityInput, setcityInput] = useState('');
@@ -28,18 +40,18 @@ const Weather = () => {
   // {
     const code = weatherData?.weather[0].id;
     var url;
-    if(code < 300) url = 'src/assets/thunderstorn.png';
-    else if(code < 500) url = 'src/assets/shower-rain.png';
-    else if(code < 511) url = 'src/assets/rain.png';
-    else if(code == 511) url = 'src/assets/snow.png';
-    else if(code < 600) url = 'src/assets/shower-rain.png';
-    else if(code < 700) url = 'src/assets/snow.png';
-    else if(code < 800) url = 'src/assets/mist.png';
-    else if(code == 800) url = 'src/assets/sun.png';
-    else if(code == 801) url = 'src/assets/few-clouds.png';
-    else if(code == 802) url = 'src/assets/scattercloud.png';
-    else if(code == 803) url = 'src/assets/broken-cloud.png';
-    else url ='src/assets/broken-cloud.png';
+    if(code < 300) url = thunderstorm;
+    else if(code < 500) url = shower_rain;
+    else if(code < 511) url = rain;
+    else if(code == 511) url = snow;
+    else if(code < 600) url = shower_rain;
+    else if(code < 700) url = snow;
+    else if(code < 800) url = mist;
+    else if(code == 800) url = sun;
+    else if(code == 801) url = few_clouds;
+    else if(code == 802) url = s_clouds;
+    else if(code == 803) url = b_clouds;
+    else url = b_clouds;
   // }
 
   const sunriseUnix = weatherData?.sys.sunrise;
